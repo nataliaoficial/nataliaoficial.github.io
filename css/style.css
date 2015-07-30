@@ -83,7 +83,7 @@ em {color: #14dbb4; font-style: italic}
 
 /* Solo para media queries */
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
     table th, table td, table caption {
         display: block
   }
