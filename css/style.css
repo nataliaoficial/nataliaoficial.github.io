@@ -27,7 +27,7 @@ em {color: #14dbb4; font-style: italic}
     top: 0;
     bottom: 0;
     left: 70px;
-    width: 800px;
+    width: 700px;
     height: 200px;
 }
 
@@ -100,24 +100,16 @@ em {color: #14dbb4; font-style: italic}
     .banner {background-size: cover}
     
     .slogan {
-        color: white;
-        font-size: 400%;
-        line-height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 480px;
+        font-size: 350%;
+        width: 450px;
         height: 300px;
-        text-align: center
-}
+    }
     
     .social {
         top: auto;
         right: 0;
         left: 0;
-        bottom: 50pt;
+        bottom: 5%
 }
     
     table th, table td, table caption {
