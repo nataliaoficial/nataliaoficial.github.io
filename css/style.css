@@ -12,7 +12,7 @@ strong {color: #14dbb4; font-weight: 700}
 em {color: #14dbb4; font-style: italic}
 
 .banner {
-    background: url("imgs/banner.png");
+    background: url("../imgs/banner.png");
     background-position: 70%;
     background-size: cover;
     height: 400px;
