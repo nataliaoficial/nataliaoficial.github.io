@@ -6,9 +6,12 @@ body {
     color: #bfbfbf;
 }
 
+p {font-size: 1.4em; line-height: 1.6em}
+
 a {color: crimson}
 
 strong {color: #14dbb4; font-weight: 700}
+
 em {color: #14dbb4; font-style: italic}
 
 .banner {
@@ -39,7 +42,7 @@ em {color: #14dbb4; font-style: italic}
 
 .social ul li {
     display: inline-block;
-    padding-left: 1em
+    padding-left: .5em
 }
 
 
@@ -64,20 +67,35 @@ em {color: #14dbb4; font-style: italic}
 
 /* Secciòn contacto */
 
+.contacto {
+    background: url("/imgs/bg-contacto.png") no-repeat 0 0;
+    background-size: cover;
+    margin-bottom: 0;
+    padding-bottom: 3em
+}
+
+.contacto p {text-align: center}
+
+.representante {margin: 0 auto}
+
 .representante caption {
     color:white;
     text-align: left;
-    font-size: 20pt;
-    font-style: italic
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400
 }
 
-.representante th {
+.representante th, .representante td {
     text-align: left;
-    padding-right: 2%
+    padding: .4em .5em .5em 0;
+    font-size: 1.7em
 }
+
+.representante td {color: crimson}
 
 .representante th i {
-    width: 24px;
+    width: 1.1em;
     color: #14dbb4
 }
 
@@ -85,10 +103,10 @@ em {color: #14dbb4; font-style: italic}
 /* FOOTER */
 
 .main-footer {
-    background: #2c2c2c;
+    background: #222;
     text-align: center;
     padding: 45px 0 45px 0;
-    font-size: 12pt
+    font-size: .7em
 }
 
 
@@ -138,10 +156,11 @@ em {color: #14dbb4; font-style: italic}
 }
 
 @media (max-height:400px) {
+    
+    .banner {text-align: center}
 
-    .slogan {
-        font-size: 4em;
-        max-height: 100px
+    .slogan, .banner p {
+        display: none
         
     }
     

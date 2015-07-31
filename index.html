@@ -4,14 +4,14 @@
         <title>Natalia</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Advent+Pro:100|Lato:400,400italic,700'>
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Advent+Pro:100|Lato:300,300italic,700,700italic'>
         
         <meta name="description" content="Sitio oficial de la cantante chilena Natalia.">
         <meta name="viewport" content="width=device-width" />
     </head>
     
     <body>
-        <header class="banner">
+        <header role="banner" class="banner">
             <h1><a href="/">Natalia</a></h1>
             <p>Cantante chilena</p>
             <div class="slogan">"Una voz hecha sentimiento"</div>
@@ -19,13 +19,50 @@
 
         <nav class="social">
             <ul>
-                <li><a href="#"><i class="fa fa-facebook-official fa-2x fb-soc" target="_blank"></i></a></li>
-                <li><a href="https://plus.google.com/111200890904045191615/about" target="_blank"><i class="fa fa-google-plus-square fa-2x goo-soc"></i></a></li>
-                <li><a href="https://twitter.com/natalia_musica" target="_blank"><i class="fa fa-twitter-square fa-2x twi-soc"></i></a></li>
+                <li>
+                    <a href="#" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/111200890904045191615/about" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/natalia_musica" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://soundcloud.com/natalia-oficial" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://soundcloud.com/natalia-oficial" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
-        <main class="">
+        <main role="main">
             <section class="sections bio">
                 <h2>Biograf&iacute;a</h2>
                 <p><strong>Natalia Jiménez Figueroa</strong>, nació en Concepción el 9 de julio de 1983. Su familia está compuesta por sus padres, Carlos, Dania y de su hermano menor, Lucas.</p>
@@ -48,7 +85,7 @@
                 <h2>Contacto</h2>
                 <p>Para ponerte en contacto conmigo utiliza las siguientes opciones.</p>
                 <table class="representante">
-                <caption>Representante art&iacute;stico</caption>
+                <caption>Representante art&iacute;stico:</caption>
                     <tr>
                         <th><i class="fa fa-user fa-1x"></i>Nombre:</th><td>Ivonne Figueroa Guajardo</td>
                     </tr>
@@ -68,7 +105,7 @@
             </section>
         </main>
         
-        <footer class="main-footer">
+        <footer role="contentinfo" class="main-footer">
             <p class="copyright">&copy; 2015 Natalia. Todos los derechos reservados.</p>
         </footer>
     </body>
