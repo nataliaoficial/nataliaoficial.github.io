@@ -1,28 +1,36 @@
-* {padding: 0; margin: 0}
-
+* {
+    padding: 0;
+    margin: 0
+}
 body {
     background: #171717;
     font: 100%/200% 'lato', Helvetica, Arial, sans-serif;
     color: #bfbfbf;
 }
-
-p {font-size: 1.4em; line-height: 1.6em}
-
-a {color: crimson}
-
-strong {color: #14dbb4; font-weight: 700}
-
-em {color: #14dbb4; font-style: italic}
-
+p {
+    font-size: 1.4em;
+    line-height: 1.6em
+}
+a {
+    color: crimson
+}
+strong {
+    color: #14dbb4;
+    font-weight: 700
+}
+em {
+    color: #14dbb4;
+    font-style: italic
+}
 .banner {
     background: url("/imgs/banner.png");
     background-position: center center;
     height: 100vh;
 }
-
 .slogan {
     color: crimson;
     font: 5em/100% 'Advent Pro';
+    font-weight: 100;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -32,19 +40,16 @@ em {color: #14dbb4; font-style: italic}
     height: 200px;
     margin: auto
 }
-
 .social {
     position: absolute;
     top: 1em;
     right: 1em;
     text-align: center
 }
-
 .social ul li {
     display: inline-block;
     padding-left: .5em
 }
-
 
 /* Secciones general */
 
@@ -53,16 +58,28 @@ em {color: #14dbb4; font-style: italic}
     margin: 50pt auto;
     padding: 10pt;
 }
-
 .sections h2 {
-    font: 48pt 'Advent Pro';
+    font: 4em 'Advent Pro';
+    font-weight: 100;
     color: white;
     text-align: center;
     margin-bottom: 30pt
 }
-
 .sections p {
     margin-bottom: 30pt
+}
+
+/* Sección videos */
+
+.video_frame {
+    margin-bottom: 3em
+}
+
+.video_frame h3 {
+    color: /*#14dbb4*/crimson;
+    font: 1.5em 'Advent Pro';
+    margin-bottom: .5em;
+    font-weight: 500
 }
 
 /* Secciòn contacto */
@@ -73,32 +90,32 @@ em {color: #14dbb4; font-style: italic}
     margin-bottom: 0;
     padding-bottom: 3em
 }
-
-.contacto p {text-align: center}
-
-.representante {margin: 0 auto}
-
+.contacto p {
+    text-align: center
+}
+.representante {
+    margin: 0 auto
+}
 .representante caption {
-    color:white;
+    color: white;
     text-align: left;
     font-size: 2em;
     font-style: normal;
     font-weight: 400
 }
-
-.representante th, .representante td {
+.representante th,
+.representante td {
     text-align: left;
     padding: .4em .5em .5em 0;
     font-size: 1.7em
 }
-
-.representante td {color: crimson}
-
+.representante td {
+    color: crimson
+}
 .representante th i {
     width: 1.1em;
     color: #14dbb4
 }
-
 
 /* FOOTER */
 
@@ -109,20 +126,24 @@ em {color: #14dbb4; font-style: italic}
     font-size: .7em
 }
 
-
 /* Solo para media queries */
+/* FIXME: arreglar los media queries */
 
 @media (max-width:750px) {
-    
-    .banner h1 {font: 3em 'Advent Pro'; line-height: 1.05em; padding-top: 0.1em; padding-left: 0.3em}
-    
-    .banner p {font-size: 1.05em; padding-left: 1em}
-    
+    .banner h1 {
+        font: 3em 'Advent Pro';
+        line-height: 1.05em;
+        padding-top: 0.1em;
+        padding-left: 0.3em
+    }
+    .banner p {
+        font-size: 1.05em;
+        padding-left: 1em
+    }
     .slogan {
         font-size: 5em;
         text-align: center
     }
-    
     .social {
         top: auto;
         right: 0;
@@ -130,40 +151,36 @@ em {color: #14dbb4; font-style: italic}
         bottom: 2em;
         font-size: 1.6em
     }
-    
-    table th, table td, table caption {
+    table th,
+    table td,
+    table caption {
         display: block
     }
-    
     .representante {
         width: 100%;
         border-collapse: separate;
-        border-spacing: 0 30px;}
-    
-    .representante tr {line-height: 150%}
-    
+        border-spacing: 0 30px;
+    }
+    .representante tr {
+        line-height: 150%
+    }
 }
-
 @media (max-width:400px) {
-
     .slogan {
         font-size: 3.5em;
     }
-    
     .social {
         font-size: 1em
     }
 }
-
 @media (max-height:400px) {
-    
-    .banner {text-align: center}
-
-    .slogan, .banner p {
-        display: none
-        
+    .banner {
+        text-align: center
     }
-    
+    .slogan,
+    .banner p {
+        display: none
+    }
     .social {
         font-size: 1em
     }
