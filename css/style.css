@@ -1,32 +1,94 @@
+/* CSS Creado por Lucas Jiménez */
+
+
+/* BASE */
+
 * {
     padding: 0;
     margin: 0
 }
+
 body {
     background: #171717;
     font: 100%/200% 'lato', Helvetica, Arial, sans-serif;
     color: #bfbfbf;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Advent Pro'
+}
+
+h1 { font-size: 4em; }
+
+h2 {
+    color: white;
+    font-size: 4em;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 1.5em
+}
+
+h2:before {
+    background-image: url(/imgs/flourish.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 1em .5em;
+    display: inline-block;
+    padding-right: .1em;
+    width: 1em;
+    height: 1em;
+    content: ""
+}
+h2:after {
+    background-image: url(/imgs/rflourish.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 1em .5em;
+    display: inline-block;
+    padding-left: .1em;
+    width: 1em;
+    height: 1em;
+    content: ""
+}
+
+h3 {
+    color: crimson;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: .4em;
+    border-bottom: thin solid crimson
+}
+
+
 p {
     font-size: 1.4em;
     line-height: 1.6em
 }
-a {
-    color: crimson
+
+a:link {
+    color: crimson;
+    transition: color 1s ease-out, background 1s ease-in;
 }
+a:visited { color: crimson }
+a:hover { color: #14dbb4 }
+a:active { color: #14dbb4 }
+
 strong {
     color: #14dbb4;
     font-weight: 700
 }
+
 em {
     color: #14dbb4;
     font-style: italic
 }
+
 .banner {
     background: url("/imgs/banner.png");
     background-position: center center;
     height: 100vh;
 }
+
 .slogan {
     color: crimson;
     font: 5em/100% 'Advent Pro';
@@ -40,12 +102,14 @@ em {
     height: 200px;
     margin: auto
 }
+
 .social {
     position: absolute;
     top: 1em;
     right: 1em;
     text-align: center
 }
+
 .social ul li {
     display: inline-block;
     padding-left: .5em
@@ -58,13 +122,7 @@ em {
     margin: 50pt auto;
     padding: 10pt;
 }
-.sections h2 {
-    font: 4em 'Advent Pro';
-    font-weight: 100;
-    color: white;
-    text-align: center;
-    margin-bottom: 30pt
-}
+
 .sections p {
     margin-bottom: 30pt
 }
@@ -75,12 +133,6 @@ em {
     margin-bottom: 3em
 }
 
-.video_frame h3 {
-    color: /*#14dbb4*/crimson;
-    font: 1.5em 'Advent Pro';
-    margin-bottom: .5em;
-    font-weight: 500
-}
 
 .video-container {
     position: relative;
@@ -99,7 +151,7 @@ em {
 }
  
 
-/* Secciòn contacto */
+/* Sección contacto */
 
 .contacto {
     background: url("/imgs/bg-contacto.png") no-repeat 0 0;
@@ -107,12 +159,15 @@ em {
     margin-bottom: 0;
     padding-bottom: 3em
 }
+
 .contacto p {
     text-align: center
 }
+
 .representante {
     margin: 0 auto
 }
+
 .representante caption {
     color: white;
     text-align: left;
@@ -120,15 +175,18 @@ em {
     font-style: normal;
     font-weight: 400
 }
+
 .representante th,
 .representante td {
     text-align: left;
     padding: .4em .5em .5em 0;
     font-size: 1.7em
 }
+
 .representante td {
     color: crimson
 }
+
 .representante th i {
     width: 1.1em;
     color: #14dbb4
