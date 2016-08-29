@@ -29,13 +29,16 @@ em {
   margin: 0 auto
 }
 
-.paragraph {
-  margin-bottom: 1.5em
+.bio__content {
+  font-size: 1.2em;
+  padding: 2em;
+  column-count: 3;
+  column-gap: 2em;
+  column-rule: solid thin;
 }
 
-.contact {
-  background: url("/imgs/bg-contacto.png") no-repeat 0 0;
-  background-size: cover;
+.paragraph {
+  margin-bottom: 1.5em
 }
 
 .site-header {
@@ -63,7 +66,7 @@ em {
   font-weight: 100;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
-  flex: 1 1 100%
+  flex: 1 1 content
 }
 
 .lang-option {
@@ -88,7 +91,7 @@ em {
   display: table; /* bg adjust to content and can center */
   margin: .5em auto;
   -webkit-transform: rotate(3deg);
-  transform: rotate(3deg);
+  transform: rotate(-4deg);
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%
@@ -112,15 +115,13 @@ em {
   content: ""
 }
 
-.videos {
+.videos__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .video-container {
@@ -128,7 +129,7 @@ em {
   margin: 1em;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 18.75em;
-  flex: 1 1 18.75em
+  flex: 0 0 18.75em
 }
 
 .video-container__title {
@@ -147,46 +148,49 @@ em {
   padding: .75em
 }
 
-.contact-info {
-  padding: 3em;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.contact {
+  background: url("/imgs/bg-contacto.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+.contact__content {
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-.contact-info__title {
-  font-size: 2em;
-  text-decoration: underline;
-  margin-bottom: 1em;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%
+.contact__social {
+  padding: 2em;
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 18em
 }
 
-.contact-info__body {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%
-}
-
-.contact-info__table-row {
+.contact__info {
+  padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-flow: column;
+  flex: 1 1 18em
 }
 
-.contact-info__table-header {
-  font-size: 2em;
-  text-align: left;
+.contact__intro {
+  font-size: 1.8em;
+  font-style: italic;
+  margin-bottom: 1.5em
 }
 
-.contact-info__table-data {
-  font-size: 2em;
+.manager {
+  color: tomato;
+  font-size: 1.5em;
+}
+
+.contact__link {
+  color: tomato;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: .5em;
+  display: inline;
 }
 
 .site-footer {
@@ -237,6 +241,11 @@ em {
 
   .title {
     font-size: 2em;
+  }
+
+  .bio__content {
+    font-size: 1em;
+    column-count: 1
   }
 
   .contact-info__title {
