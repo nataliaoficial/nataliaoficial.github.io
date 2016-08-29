@@ -36,14 +36,23 @@ em {
   background: url("/imgs/banner.jpg");
   background-position: center center;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .site-title {
   font-size: 6em;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%
 }
 
@@ -52,11 +61,15 @@ em {
   font-family: "Advent Pro";
   font-size: 6em;
   font-weight: 100;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 0;
   flex: 0 0 0
 }
 
 .lang-options {
   list-style: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%
 }
 
@@ -115,14 +128,21 @@ em {
 }
 
 .videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .video-container {
   background-color: white;
   margin: 1em;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 18.75em;
   flex: 1 1 18.75em
 }
 
@@ -144,14 +164,23 @@ em {
 .site-footer {
   background-color: #222;
   padding: 45px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .social-links {
   list-style: none;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
   order: -1
 }
 
@@ -173,6 +202,8 @@ em {
   }
 
   .site-footer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
