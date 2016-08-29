@@ -1,292 +1,182 @@
 /* CSS Creado por Lucas Jiménez */
-
-
-/* BASE */
+/* redish color: crimson */
+/* greenish color: #14dbb4 */
 
 * {
-    padding: 0;
-    margin: 0
+  padding: 0;
+  margin: 0;
 }
 
-body {
-    background: #171717;
-    font: 100%/200% 'lato', Helvetica, Arial, sans-serif;
-    color: #bfbfbf;
+html {
+  font: 100%/1.5 'lato', Helvetica, Arial, sans-serif;
+  color: #bfbfbf;
+  background-color: #171717;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Advent Pro'
-}
-
-h1 { font-size: 4em; }
-
-h2 {
-    color: white;
-    font-size: 4em;
-    font-weight: 100;
-    text-align: center;
-    margin-bottom: 1.5em
-}
-
-h2:before {
-    background-image: url(/imgs/flourish.svg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 1em .5em;
-    display: inline-block;
-    padding-right: .1em;
-    width: 1em;
-    height: 1em;
-    content: ""
-}
-
-h2:after {
-    background-image: url(/imgs/rflourish.svg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 1em .5em;
-    display: inline-block;
-    padding-left: .1em;
-    width: 1em;
-    height: 1em;
-    content: ""
-}
-
-h3 {
-    color: crimson;
-    font-size: 1.5em;
-    font-weight: 500;
-    margin-bottom: .4em;
-    border-bottom: thin solid crimson
-}
-
-
-p {
-    font-size: 1.4em;
-    line-height: 1.6em
-}
-
-a:link {
-    color: crimson;
-    transition: color 1s ease-out, background 1s ease-in;
-}
-
-a:visited { color: crimson }
-a:hover { color: #14dbb4 }
-a:active { color: #14dbb4 }
 
 strong {
-    color: #14dbb4;
-    font-weight: 700
+  color: #14dbb4;
+  font-weight: 700
 }
 
 em {
-    color: #14dbb4;
-    font-style: italic
+  color: #14dbb4;
+  font-style: italic
 }
 
-.banner {
-    background: url("/imgs/banner.jpg");
-    background-position: center center;
-    height: 100vh;
+.paragraph {
+  margin-bottom: 1.5em
 }
 
-/* Center absolute */
-.titulo {
-    position: absolute;
-    left: 50%;
-    top: 2em;
+.contact {
+  background: url("/imgs/bg-contacto.png") no-repeat 0 0;
+  background-size: cover;
 }
 
-.titulo a:link {
-    text-decoration: none;
+.site-header {
+  background: url("/imgs/banner.jpg");
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.titulo a:hover {
-    color: crimson
+.site-title {
+  font-size: 6em;
+  flex: 1 1 100%
 }
 
-.slogan {
-    color: crimson;
-    font: 5em/100% 'Advent Pro';
-    font-weight: 100;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-width: 800px;
-    height: 200px;
-    margin: auto
+.site-slogan {
+  color: pink;
+  font-family: "Advent Pro";
+  font-size: 6em;
+  font-weight: 100;
+  flex: 0 0 0
 }
 
-.lang {
-    position: absolute;
-    top: 1em;
-    left: 1em;
+.lang-options {
+  list-style: none;
+  flex: 1 1 100%
 }
 
-.lang li {
-    display: inline-block;
-    padding-left: 1em;
+.lang-options__item {
+  color: pink;
+  display: inline-block;
+  margin-right: .5em;
 }
 
-.social {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    text-align: center
+.lang-options__item--underline {
+  border-bottom: 1px solid pink;
 }
 
-.social ul li {
-    display: inline-block;
-    padding-left: .5em
+.lang-options__link {
+  color: inherit;
+  text-decoration: none;
+  padding: .625em;
+  border: .0625em solid pink;
+  border-radius: .5em;
 }
 
-/* Secciones general */
+.title {
+  font-family: "advent pro";
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+  width: 100%
+}
+
+.title:before {
+  background-image: url(/imgs/flourish.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 1em .5em;
+  display: inline-block;
+  padding-right: .1em;
+  width: 1em;
+  height: 1em;
+  content: ""
+}
+
+.title:after {
+  background-image: url(/imgs/rflourish.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 1em .5em;
+  display: inline-block;
+  padding-left: .1em;
+  width: 1em;
+  height: 1em;
+  content: ""
+}
 
 .sections {
-    max-width: 800px;
-    margin: 50pt auto;
-    padding: 10pt;
+  min-height: 100vh
 }
 
-.sections p {
-    margin-bottom: 30pt
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-/* Sección videos */
-
-.video_frame {
-    margin-bottom: 3em
-}
-
 
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px; height: 0; overflow: hidden;
+  background-color: white;
+  margin: 1em;
+  flex: 1 1 18.75em
 }
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.video-container__title {
+  color: #222;
+  font-size: 1.5em;
+  padding: .5em
+}
+.video-object {
+  width: 100%;
+  min-height: 300px
 }
 
-.title {width: 100%}
-
-
-/* Sección contacto */
-
-.contacto {
-    background: url("/imgs/bg-contacto.png") no-repeat 0 0;
-    background-size: cover;
-    margin-bottom: 0;
-    padding-bottom: 3em
+.video-container__caption {
+  color: #222;
+  padding: .75em
 }
 
-.contacto p {
-    text-align: center
+.site-footer {
+  background-color: #222;
+  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.representante {
-    margin: 0 auto
+.social-links {
+  list-style: none;
+  order: -1
 }
 
-.representante caption {
-    color: white;
-    text-align: left;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 400
+.social-links__item {
+  display: inline-block;
 }
 
-.representante th,
-.representante td {
-    text-align: left;
-    padding: .4em .5em .5em 0;
-    font-size: 1.7em
+.social-links__link {
+  color: pink;
 }
 
-.representante td {
-    color: crimson
-}
+@media screen and (max-width: 600px) {
+  .site-title {
+    font-size: 4em
+  }
 
-.representante th i {
-    width: 1.1em;
-    color: #14dbb4
-}
+  .site-slogan {
+    font-size: 4em
+  }
 
-/* FOOTER */
+  .site-footer {
+    justify-content: center;
+  }
 
-.main-footer {
-    background: rgb(32,32,32);
-    text-align: center;
-    padding: 45px 0 45px 0;
-    font-size: .7em
-}
-
-/* Solo para media queries */
-/* FIXME: arreglar los media queries */
-
-@media (max-width:750px) {
-    .banner h1 {
-        font: 3em 'Advent Pro';
-        line-height: 1.05em;
-        padding-top: 0.1em;
-        padding-left: 0.3em
-    }
-    .banner p {
-        font-size: 1.05em;
-        padding-left: 1em
-    }
-    .slogan {
-        font-size: 5em;
-        text-align: center
-    }
-    .social {
-        top: auto;
-        right: 0;
-        left: 0;
-        bottom: 2em;
-        font-size: 1.6em
-    }
-    table th,
-    table td,
-    table caption {
-        display: block
-    }
-    .representante {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0 30px;
-    }
-    .representante tr {
-        line-height: 150%
-    }
-}
-@media (max-width:400px) {
-    .slogan {
-        font-size: 3.5em;
-    }
-    .social {
-        font-size: 1em
-    }
-}
-@media (max-height:400px) {
-    .banner {
-        text-align: center
-    }
-    .slogan,
-    .banner p {
-        display: none
-    }
-    .social {
-        font-size: 1em
-    }
+  .social-links {
+    margin-bottom: 1.5em
+  }
 }
