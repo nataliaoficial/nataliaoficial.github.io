@@ -13,6 +13,9 @@
 </html>
 <body>
   <svg style="display: none">
+    <symbol id="hamburguer" viewBox="0 0 32 32">
+      <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"></path>
+    </symbol>
     <symbol id="twitter" viewBox="0 0 1792 1792">
       <path d="M1616,450a618,618,0,0,1-148,153c6,90-9,190-34,275s-58,154-105,227a892,892,0,0,1-169,192q-98,84-236,133c-244,88-530,58-748-83,156,18,313-25,437-122q-96-2-172-59T338,1021a319,319,0,0,0,133-5Q369,994,302,913T235,726v-4a293,293,0,0,0,133,37q-60-40-96-105c-48-88-46-204,5-290Q387,501,546,583t339,91c-20-96,9-206,79-276,117-117,311-114,424,7a578,578,0,0,0,187-71q-34,105-130,163,85-9,170-46h0Z"></path>
     </symbol>
@@ -41,8 +44,11 @@
   <header class="site-header">
     <h1 class="site-title">Natalia</h1><a class="site-logo" href="/"></a>
     <p class="site-slogan">A<br>Soulful<br>Voice</p><a class="lang-option" href="/">View in spanish</a>
-  </header><span id="toggle_menu" onclick="toggle_menu()"></span>
-  <nav id="site-nav"><span class="btn-close" onclick="toggle_menu()">X</span><a class="site-nav__link" href="#bio" onclick="toggle_menu()">Biography</a><a class="site-nav__link" href="#music" onclick="toggle_menu()">Music</a><a class="site-nav__link" href="#videos" onclick="toggle_menu()">Videos</a><a class="site-nav__link" href="#contact" onclick="toggle_menu()">Contact</a></nav>
+  </header>
+  <svg id="toggle_menu" onclick="toggle_menu()" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+    <use xlink:href="#hamburguer"></use>
+  </svg>
+  <nav id="site-nav"><span class="btn-close" onclick="toggle_menu()" tabindex="0" aria-label="Close Menu" role="button">X</span><a class="site-nav__link" href="#bio" onclick="toggle_menu()">Biography</a><a class="site-nav__link" href="#music" onclick="toggle_menu()">Music</a><a class="site-nav__link" href="#videos" onclick="toggle_menu()">Videos</a><a class="site-nav__link" href="#contact" onclick="toggle_menu()">Contact</a></nav>
   <main>
     <section class="sections bio">
       <h2 class="title"><a name="bio">Biography</a></h2>
@@ -192,11 +198,11 @@
     
     function toggle_menu() {
       if(status == 'hidden') {
-        menu.style.width = '50vh';
+        menu.style.right = '0';
         status = 'visible';
       }
       else {
-        menu.style.width = '0';
+        menu.style.right = '-300px';
         status = 'hidden';
       }
     }
