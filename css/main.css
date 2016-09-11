@@ -66,6 +66,47 @@ em {
   top: .5em;
   left: .5em; }
 
+#toggle_menu {
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  background: #fff;
+  top: 1em;
+  right: 0;
+  z-index: 10;
+  cursor: pointer;
+  border: 1px solid #222; }
+
+#site-nav {
+  background: #222;
+  opacity: .97;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  z-index: 100;
+  overflow: hidden;
+  transition: all .3s; }
+
+.site-nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Advent pro';
+  font-weight: 100;
+  font-size: 1.5em;
+  padding: .5em 1em;
+  border-bottom: 1px solid #fff;
+  display: block; }
+
+.btn-close {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: .6em 1em;
+  margin: 1.5em;
+  line-height: 3em;
+  cursor: pointer; }
+
 .bio__content {
   font-size: 1.2em;
   padding: 0 1.5em;

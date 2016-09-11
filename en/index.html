@@ -41,10 +41,11 @@
   <header class="site-header">
     <h1 class="site-title">Natalia</h1><a class="site-logo" href="/"></a>
     <p class="site-slogan">A<br>Soulful<br>Voice</p><a class="lang-option" href="/">View in spanish</a>
-  </header>
+  </header><span id="toggle_menu" onclick="toggle_menu()"></span>
+  <nav id="site-nav"><span class="btn-close" onclick="toggle_menu()">X</span><a class="site-nav__link" href="#bio" onclick="toggle_menu()">Biography</a><a class="site-nav__link" href="#music" onclick="toggle_menu()">Music</a><a class="site-nav__link" href="#videos" onclick="toggle_menu()">Videos</a><a class="site-nav__link" href="#contact" onclick="toggle_menu()">Contact</a></nav>
   <main>
     <section class="sections bio">
-      <h2 class="title">Biography</h2>
+      <h2 class="title"><a name="bio">Biography</a></h2>
       <div class="bio__content">
         <p class="paragraph paragraph__intro"><strong>Natalia Jiménez Figueroa</strong>, was born on 9th of July in 1983, in Concepci&oacute;n, Chile. Her family consists of her parents, Carlos and Dania and her younger brother Lucas.</p>
         <p class="paragraph">She studied in Wessex School and Saint John's School, in Concepci&oacute;n, where she realized her first musical performances. Later in the year 2000 she  emigrates to Santiago to  start taking singing lessons, with Ricardo &Aacute;lvarez and Ana Mar&iacute;a Meza.</p>
@@ -57,12 +58,12 @@
     </section>
     <hr>
     <section class="sections music">
-      <h2 class="title">Music</h2>
+      <h2 class="title"><a name="music">Music</a></h2>
       <iframe width="100%" height="265" scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_282327?widget_id=55&amp;pwc[included_songs]=1&amp;context_type=page_object&amp;pwc[size]=small&amp;pwc[color]=dark" style="width:0px;min-width:100%;max-width:100%"></iframe>
     </section>
     <hr>
     <section class="sections videos">
-      <h2 class="title">Videos</h2>
+      <h2 class="title"><a name="videos">Videos</a></h2>
       <div class="videos-wrapper">
             <div class="video-container">
               <h3 class="video__title">Interview made in the TV channel Themas Television</h3>
@@ -124,7 +125,7 @@
     </section>
     <hr>
     <section class="sections contact">
-      <h2 class="title">Contact</h2>
+      <h2 class="title"><a name="contact">Contact</a></h2>
       <div class="contact__content">
         <div class="contact__info">
           <p class="contact__intro">To get in touch with me for professional events use the information below.</p><a class="contact__link" href="mailto:ivonnefg683@gmail.com">
@@ -185,4 +186,19 @@
   <footer class="site-footer" role="contentinfo">
     <p class="copyright">&copy; 2016 Natalia. All rights reserved.</p>
   </footer>
+  <script type="text/javascript">
+    var menu = document.getElementById('site-nav');
+    var status = 'hidden';
+    
+    function toggle_menu() {
+      if(status == 'hidden') {
+        menu.style.width = '50vh';
+        status = 'visible';
+      }
+      else {
+        menu.style.width = '0';
+        status = 'hidden';
+      }
+    }
+  </script>
 </body>

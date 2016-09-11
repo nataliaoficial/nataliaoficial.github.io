@@ -41,10 +41,11 @@
   <header class="site-header">
     <h1 class="site-title">Natalia</h1><a class="site-logo" href="/"></a>
     <p class="site-slogan">Una voz<br>hecha<br>sentimiento</p><a class="lang-option" href="/en">View in english</a>
-  </header>
+  </header><span id="toggle_menu" onclick="toggle_menu()"></span>
+  <nav id="site-nav"><span class="btn-close" onclick="toggle_menu()">X</span><a class="site-nav__link" href="#bio" onclick="toggle_menu()">Biografía</a><a class="site-nav__link" href="#music" onclick="toggle_menu()">Música</a><a class="site-nav__link" href="#videos" onclick="toggle_menu()">Videos</a><a class="site-nav__link" href="#contact" onclick="toggle_menu()">Contacto</a></nav>
   <main>
     <section class="sections bio">
-      <h2 class="title">Biograf&iacute;a</h2>
+      <h2 class="title"><a name="bio">Biografía</a></h2>
       <div class="bio__content">
         <p class="paragraph paragraph__intro"><strong>Natalia Jiménez Figueroa</strong>, nació en Concepción el 9 de julio de 1983. Su familia está compuesta por sus padres, Carlos, Dania y de su hermano menor, Lucas.</p>
         <p class="paragraph">Sus estudios los realizó en los Colegios Wessex School y en el Colegio Saint John's School de Concepción, donde hizo <em>sus primeras presentaciones musicales</em>. Luego en el año 2000, emigra a Santiago para comenzar sus clases de canto en la <em>Escuela de Artes Vocales</em> bajo la Enseñanza de Ricardo Álvarez y luego en <em>Projazz</em> con Ana María Meza</p>
@@ -55,12 +56,12 @@
     </section>
     <hr>
     <section class="sections music">
-      <h2 class="title">Música</h2>
+      <h2 class="title"><a name="music">Música</a></h2>
       <iframe width="100%" height="265" scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_282327?widget_id=55&amp;pwc[included_songs]=1&amp;context_type=page_object&amp;pwc[size]=small&amp;pwc[color]=dark" style="width:0px;min-width:100%;max-width:100%"></iframe>
     </section>
     <hr>
     <section class="sections videos">
-      <h2 class="title">Videos</h2>
+      <h2 class="title"><a name="videos">Videos</a></h2>
       <div class="videos-wrapper">
             <div class="video-container">
               <h3 class="video__title">Entrevista realizada en el canal Themas Televisión</h3>
@@ -122,7 +123,7 @@
     </section>
     <hr>
     <section class="sections contact">
-      <h2 class="title">Contacto</h2>
+      <h2 class="title"><a name="contact">Contacto</a></h2>
       <div class="contact__content">
         <div class="contact__info">
           <p class="contact__intro">Para eventos contáctate con mi representante.</p><a class="contact__link" href="mailto:ivonnefg683@gmail.com">
@@ -160,4 +161,19 @@
   <footer class="site-footer" role="contentinfo">
     <p class="copyright">&copy; 2016 Natalia. Todos los derechos reservados.</p>
   </footer>
+  <script type="text/javascript">
+    var menu = document.getElementById('site-nav');
+    var status = 'hidden';
+    
+    function toggle_menu() {
+      if(status == 'hidden') {
+        menu.style.width = '50vh';
+        status = 'visible';
+      }
+      else {
+        menu.style.width = '0';
+        status = 'hidden';
+      }
+    }
+  </script>
 </body>
